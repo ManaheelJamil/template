@@ -5,7 +5,7 @@ const toggleNavbaropen=()=>{
 }
 mobile_nav.addEventListener("click",()=> toggleNavbaropen())
 const toggleNavbarclose=()=>{
-        header_nav.classList.remove("toggle");
+        header_nav.classList.remove("new");
         console.log("remove")
 }
 mobile_nav.addEventListener("click",()=> toggleNavbarclose())
