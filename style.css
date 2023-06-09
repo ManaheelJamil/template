@@ -52,9 +52,10 @@ nav {
 .shopping-cart-icon {
     background-color: #7AC64D;
 }
-/* nhkkkjhh */
-.close{
+
+.new{
 visibility: hidden;
+position: absolute;
 }
 .toggle {
     margin: 5px;
@@ -64,9 +65,9 @@ visibility: hidden;
     position: absolute;
     display: none;
     transform: translateX(30%);
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
     opacity: 0;
-    /* width: 310px; */
+
     color: white;
     visibility: hidden;
     pointer-events: none;
@@ -99,12 +100,12 @@ visibility: visible;
     font-size: 22px;
     font-family: "Aldrich", sans-serif;
 }
-.active .close {
+.active .new {
 visibility: visible;
+position: relative;
 }
 .active .open {
 display: none;
-padding: 2px;
 }
 @media screen and (max-width:984px) {
     .toggle {
@@ -946,7 +947,7 @@ footer {
 }
 
 .input {
-    padding: 20px 100px 20px 20px;
+    padding: 20px 62px 20px 20px;
 }
 
 .icon {
@@ -1059,7 +1060,7 @@ footer {
     }
 
     .input {
-        padding: 15px 40px 15px 20px;
+        padding: 15px 19px 15px 20px;
     }
 
     .icon {
