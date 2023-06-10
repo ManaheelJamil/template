@@ -285,7 +285,7 @@ ul li a {
 
 @media screen and (max-width:759px) {
     .main-heading h1 {
-        width: 318px;
+        width: 240px;
         font-size: 9vw;
         margin-top: 80px;
     }
@@ -376,7 +376,11 @@ button {
         margin-left: 15px;
     }
 }
-
+@media screen and (max-width:484px) {
+    .right-side img{
+        width: 330px;
+    }
+}
 @media screen and (max-width:320px) {
     .right-side img {
         width: 290px;
@@ -484,6 +488,7 @@ button {
 .box {
     max-width: 1150px;
     margin: auto;
+margin-top: -60px;
 
     /* margin: 0px 60px; */
 }
@@ -613,7 +618,7 @@ button {
 .lines {
     width: 90vw;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 16px;
     margin-bottom: 70px;
     background-color: rgb(255, 248, 248);
 }
@@ -643,7 +648,6 @@ button {
 .sec-5 {
     display: flex;
     justify-content: space-between;
-    margin: 160px 50px;
 }
 
 @media screen and (max-width:1948px) {
@@ -768,7 +772,7 @@ button {
     }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:464px) {
     .sec-5 {
         display: block;
         margin: 100px 10px 10px 10px;
@@ -945,7 +949,11 @@ footer {
     color: white;
     font-family: "Aldrich", sans-serif;
 }
-
+@media screen and (max-width:391px) {
+    fotter{
+        height: 1900px;
+    }
+}
 .input {
     padding: 20px 62px 20px 20px;
 }
@@ -1101,7 +1109,7 @@ footer {
     }
 
     footer {
-        height: 1280px;
+        height: 1350px;
     }
 
     .input {
@@ -1137,7 +1145,7 @@ footer {
     }
 
     footer {
-        height: 1750px;
+        height: 1910px;
     }
 }
 
