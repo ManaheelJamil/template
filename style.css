@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Dancing+Script&family=Roboto:ital,wght@1,300&family=Wix+Madefor+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Dancing+Script&family=Roboto:ital,wght@1,300&family=Wix+Madefor+Display&display=swap');
 
-/* Main styling */
+/* -------------- MAIN STYLING --------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Navbar Styling */
+
+/* ---------------NAVBAR CODE -------------- */
 nav {
     background-color: #4b4a4a;
     padding: 15px 0px 15px 15px;
@@ -20,7 +21,6 @@ nav {
     width: 100%;
 }
 
-/* main logo styling */
 .mainLogo {
     display: flex;
 }
@@ -36,7 +36,6 @@ nav {
     font-family: 'Baloo Bhai 2', cursive;
 }
 
-/* Navbar Icons styling*/
 .navbar-logo {
     margin-top: 2px;
 }
@@ -53,10 +52,13 @@ nav {
     background-color: #7AC64D;
 }
 
-.new{
-visibility: hidden;
-position: absolute;
+ /* --------- SUB NAVBAR TOGGLE BAR STYLIING------------ */
+
+.new {
+    visibility: hidden;
+    position: absolute;
 }
+
 .toggle {
     margin: 5px;
     background-color: #0a0a0a;
@@ -73,11 +75,12 @@ position: absolute;
     pointer-events: none;
 }
 
-.active .toggle{
-transform: translateX(0); 
-opacity: 1;
-visibility: visible;
+.active .toggle {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
 }
+
 .toggle-ul {
     color: white;
     display: block;
@@ -100,13 +103,16 @@ visibility: visible;
     font-size: 22px;
     font-family: "Aldrich", sans-serif;
 }
+
 .active .new {
-visibility: visible;
-position: relative;
+    visibility: visible;
+    position: relative;
 }
+
 .active .open {
-display: none;
+    display: none;
 }
+
 @media screen and (max-width:984px) {
     .toggle {
         display: block;
@@ -178,15 +184,9 @@ ul li a {
     display: none;
 }
 
-.inputs {
-    -webkit-appearance: none;
-    visibility: hidden;
-    display: none;
-}
-
-#check:checked~.toggle {
+/* #check:checked~.toggle {
     transform: translateX(0);
-}
+} */
 
 @media screen and (max-width:1948px) {
     header {
@@ -321,7 +321,8 @@ ul li a {
     }
 }
 
-/* Section # 1 styling */
+/* <!-- ************************* About Section ***************** --> */
+
 section {
     display: grid;
     grid-template-columns: auto auto;
@@ -376,11 +377,13 @@ button {
         margin-left: 15px;
     }
 }
+
 @media screen and (max-width:484px) {
-    .right-side img{
+    .right-side img {
         width: 330px;
     }
 }
+
 @media screen and (max-width:320px) {
     .right-side img {
         width: 290px;
@@ -429,19 +432,6 @@ button {
     font-family: "Aldrich", sans-serif;
 }
 
-.slider-images {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto;
-    margin: 30px 40px;
-    justify-content: center;
-}
-
-.slider-images img {
-    width: 290px;
-    height: 600px;
-    margin-left: 23px;
-}
 
 @media screen and (max-width:320px) {
     .section h1 {
@@ -449,46 +439,12 @@ button {
     }
 }
 
-@media screen and (max-width:1948px) {
-    .slider-images img {
-        width: 450px;
-        height: 700px;
-        margin-left: 25px;
-    }
-}
-
-@media screen and (max-width:676px) {
-    .slider-images {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        margin: 30px 40px;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width:984px) {
-    .slider-images img {
-        width: 450px;
-        height: 600px;
-        margin-left: 25px;
-    }
-
-    .slider-images {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-        margin: 30px 40px;
-        justify-content: center;
-    }
-}
-
-/* SECTION 4 STYLING */
+/* ***************** PAGES section **************************  */
 
 .box {
     max-width: 1150px;
     margin: auto;
-margin-top: -60px;
+    margin-top: -60px;
 
     /* margin: 0px 60px; */
 }
@@ -645,6 +601,8 @@ margin-top: -60px;
     font-family: "Aldrich", sans-serif;
 }
 
+ /* ***********TEAM SECTION ****************** */
+
 .sec-5 {
     display: flex;
     justify-content: space-between;
@@ -797,6 +755,8 @@ margin-top: -60px;
     }
 }
 
+ /* ************ CONTACT ********** */
+
 .sec-6 {
     background-image: url("https://preview.colorlib.com/theme/staging/img/call-bg.jpg.webp");
     background-position: center;
@@ -851,10 +811,11 @@ margin-top: -60px;
 
     }
 }
+  
+/* *************** blogs section ********** */
 
 .cart {
     width: 370px;
-    /* background-color: #333; */
     font-family: "Aldrich", sans-serif;
     box-shadow: 5px 10px F20px 10px rgb(233, 229, 229);
 }
@@ -938,7 +899,8 @@ margin-top: -60px;
     }
 }
 
-/* footer  */
+/* ************* footer ************* */
+
 footer {
     background-image: url("https://preview.colorlib.com/theme/staging/img/footer-bg.jpg.webp");
     background-position: center;
@@ -949,11 +911,7 @@ footer {
     color: white;
     font-family: "Aldrich", sans-serif;
 }
-@media screen and (max-width:391px) {
-    fotter{
-        height: 1900px;
-    }
-}
+
 .input {
     padding: 20px 62px 20px 20px;
 }
