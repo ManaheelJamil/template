@@ -66,8 +66,8 @@ nav {
     height: 610px;
     position: absolute;
     display: none;
-    transform: translateX(30%);
-    transition: all 0.3s linear;
+    transform: translateX(-30%);
+    transition: all 0.2s linear;
     opacity: 0;
 
     color: white;
